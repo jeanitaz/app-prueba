@@ -1,0 +1,22 @@
+<div class="registro-container">
+    <div class="registro-card">
+        <h1>Registro</h1>
+        <form (ngSubmit)="registrarUsuario()">
+            <table class="registro-table">
+                <tr>
+                    <th>Nombre</th>
+                    <td><input [(ngModel)]="this.nombre" type="text" class="registro-input" placeholder="Ingresa tu nombre" required></td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td><input [(ngModel)]="this.email" type="email" class="registro-input" placeholder="Ingresa tu email" required></td>
+                </tr>
+                <tr>
+                    <th>Contraseña</th>
+                    <td><input [(ngModel)]="this.password" type="password" class="registro-input" placeholder="Ingresa tu contraseña" required></td>
+                </tr>
+            </table>
+            <button type="submit" class="registro-btn">Registrarse</button>
+        </form>
+    </div>
+</div>

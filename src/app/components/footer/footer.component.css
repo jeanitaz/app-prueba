@@ -1,0 +1,32 @@
+.footer {
+    width: 100%;
+    background: linear-gradient(90deg, #232526, #414345, #1c92d2);
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    box-shadow: 0 -4px 20px rgba(28, 146, 210, 0.2);
+    border-radius: 20px 20px 0 0;
+    z-index: 100;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+}
