@@ -1,63 +1,92 @@
+.home-container {
+    background-image: url('https://img.itch.zone/aW1nLzE5MDY5MzU5LmdpZg==/original/wQ%2FwK%2B.gif');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.home-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(120deg, rgba(5, 40, 63, 0.08) 0%, rgba(0, 0, 0, 0.7) 100%);
+    z-index: 0;
+}
+
+
 .registro-container {
-  max-width: 350px;
-  margin: 4rem auto;
-  padding: 2.5rem 2rem;
-  background: rgba(44, 83, 100, 0.25);
-  border-radius: 24px;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  color: #fff;
-  text-align: center;
+    max-width: 350px;
+    margin: 4rem auto;
+    padding: 2.5rem 2rem;
+    background: rgba(44, 83, 100, 0.25);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #000000;
+    text-align: center;
 }
 
 .registro-container h2 {
-  margin-bottom: 2rem;
-  font-size: 2rem;
-  letter-spacing: 2px;
-  text-shadow: 0 0 8px #1c92d2;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-shadow: 0 0 8px #1c92d2;
 }
 
 .registro-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
 }
 
 .registro-form label {
-  text-align: left;
-  font-size: 1rem;
-  margin-bottom: 0.2rem;
-  color: #b3c6e7;
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+    color: #b3c6e7;
 }
 
 .registro-form input {
-  padding: 0.7rem;
-  border: none;
-  border-radius: 8px;
-  background: rgba(44,83,100,0.15);
-  color: #fff;
-  font-size: 1rem;
-  outline: none;
-  box-shadow: 0 2px 8px rgba(44,83,100,0.2);
-  backdrop-filter: blur(4px);
+    padding: 0.7rem;
+    border: none;
+    border-radius: 8px;
+    background: rgba(44, 83, 100, 0.15);
+    color: #000000;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: 0 2px 8px rgba(44, 83, 100, 0.2);
+    backdrop-filter: blur(4px);
 }
 
 .registro-form button {
-  padding: 0.8rem;
-  border: none;
-  border-radius: 8px;
-  background: rgba(28,146,210,0.35);
-  color: #fff;
-  font-size: 1.1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s, box-shadow 0.3s;
-  box-shadow: 0 2px 8px rgba(28,146,210,0.2);
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    background: rgba(28, 146, 210, 0.35);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 8px rgba(28, 146, 210, 0.2);
 }
 
 .registro-form button:hover {
-  background: #232526;
-  box-shadow: 0 0 12px #1c92d2;
+    background: #232526;
+    box-shadow: 0 0 12px #1c92d2;
 }

@@ -1,9 +1,13 @@
 import { Component } from '@angular/core';
 import { Curso, CursosService } from '../../servicio/cursos.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-cursos',
-  templateUrl: './cursos.component.html'
+  selector: 'app-login',
+  standalone: true,
+  imports: [FormsModule],
+  templateUrl: './cursos.component.html',
+  styleUrl: './cursos.component.css'
 })
 export class CursosComponent {
   cursos: Curso[] = [];

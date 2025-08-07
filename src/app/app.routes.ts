@@ -6,8 +6,9 @@ import { RegistroComponent } from './components/registro/registro.component';
 import { CrearCursoComponent } from './components/crear-curso/crear-curso.component';
 
 export const routes: Routes = [
-    { path: '', component: LoginComponent },
-    {path: 'registro', component: RegistroComponent},
-    { path: 'cursos', component: CursosComponent, canActivate: [authGuard] },
-    { path: 'crear-curso', component: CrearCursoComponent, canActivate: [authGuard] }
+  { path: '', redirectTo: 'login', pathMatch: 'full' }, 
+  { path: 'login', component: LoginComponent },
+  { path: 'registro', component: RegistroComponent },
+  { path: 'cursos', component: CursosComponent, canActivate: [authGuard] },
+  { path: 'crear', component: CrearCursoComponent, canActivate: [authGuard] }
 ];

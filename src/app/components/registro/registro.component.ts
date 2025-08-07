@@ -10,7 +10,7 @@ import { FormBuilder, FormGroup, FormsModule, Validators } from '@angular/forms'
   styleUrl: './registro.component.css'
 })
 export class RegistroComponent {
-nombre: string = '';
+  nombre: string = '';
   email: string = '';
   password: string = '';
   err: string = '';
@@ -31,7 +31,7 @@ nombre: string = '';
         },
         error: (err) => {
           console.error('Error al registrar', err);
-        }
-      });
-  }
+        }
+      });
+  }
 }

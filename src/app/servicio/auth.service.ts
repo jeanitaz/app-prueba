@@ -5,9 +5,9 @@ import { User } from '../components/interface/usuarios';
 
 @Injectable({ providedIn: 'root' })
 export class AuthService {
-   private apiUrl = 'http://localhost:3000/usuarios';
+  private apiUrl = 'http://localhost:3000/usuarios';
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   login(usuario: string, password: string): boolean {
     return usuario === 'admin' && password === 'admin';
@@ -16,13 +16,13 @@ export class AuthService {
     return this.http.post<User>(this.apiUrl, user);
   }
 
-  
+
   getUsers(): Observable<User[]> {
     return this.http.get<User[]>(this.apiUrl);
   }
 
-  
-getUserByEmail(email: string): Observable<User[]> {
-  return this.http.get<User[]>(`${this.apiUrl}?email=${email}`);
-}
+
+  getUserByEmail(email: string): Observable<User[]> {
+    return this.http.get<User[]>(`${this.apiUrl}?email=${email}`);
+  }
 }

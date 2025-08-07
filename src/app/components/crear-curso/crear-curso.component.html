@@ -1,23 +1,23 @@
-<div class="crear-curso-container">
-  <h2>Crear Curso</h2>
-  <form  class="crear-curso-form">
+<div class="home-container">
+  <form class="crear-curso-form">
+    <h2>Crear Curso</h2>
     <label for="nombre">Nombre:</label>
-    <input id="nombre" formControlName="nombre" />
+    <input id="nombre" name="nombre" type="text" />
 
     <label for="descripcion">Descripción:</label>
-    <input id="descripcion" formControlName="descripcion" />
+    <input id="descripcion" name="descripcion" type="text" />
 
     <label for="profesor">Profesor:</label>
-    <input id="profesor" formControlName="profesor" />
+    <input id="profesor" name="profesor" type="text" />
 
     <label for="duracion">Duración (horas):</label>
-    <input id="duracion" type="number" formControlName="duracion" />
+    <input id="duracion" name="duracion" type="number" />
 
     <label for="fechaInicio">Fecha de inicio:</label>
-    <input id="fechaInicio" type="date" formControlName="fechaInicio" />
+    <input id="fechaInicio" name="fechaInicio" type="date" />
 
     <label for="categoria">Categoría:</label>
-    <input id="categoria" formControlName="categoria" />
+    <input id="categoria" name="categoria" type="text" />
 
     <button type="submit">Crear</button>
   </form>
